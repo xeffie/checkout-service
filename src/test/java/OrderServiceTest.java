@@ -19,7 +19,7 @@ public class OrderServiceTest {
 
     @Test
     void shouldCalculateTotalForProduct() {
-        Product product = new Product(1, "Mjölk", 25.0);
+        Product product = new Product(1, "Mjölk", 26.0);
 
         when(productRepository.findById(1))
                 .thenReturn(product);
