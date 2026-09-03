@@ -1,3 +1,5 @@
+package checkoutservice;
+
 public class Product {
 
     private int id;
