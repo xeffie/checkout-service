@@ -24,3 +24,6 @@ jobs:
         with:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/checkout-service:latest
+
+      - name: Trigger deployment on Render
+        run: curl --fail --show-error -X POST ${{ secrets.RENDER_PROD_DEPLOY_HOOK }}
